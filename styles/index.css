@@ -6,7 +6,8 @@ html {
 }
 
 body {
-    background-color:rgb(35, 36, 37);
+    background: rgb(35, 36, 37);
+    background: linear-gradient(0deg, rgb(41, 38, 54) 0%, rgba(35,36,37,1) 60%);
     margin: 0;
 }
 
@@ -23,7 +24,19 @@ h1 {
 h3 {
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 0;
     font-weight: 300;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.location-icon {
+    margin-top: 50%;
+    margin-right: 10px;
 }
 
 .main-container {
@@ -96,6 +109,15 @@ li {
     color: white;
     margin-bottom: 30px;
 }
+
+.contact-icon > a, .contact-icon > a:visited {
+    color: rgb(84, 157, 284);
+}
+
+.contact-icon > a:hover {
+    color: lightgrey;
+}
+
 
 @media (max-width: 750px) {
     .content-grid {
