@@ -12,7 +12,7 @@ body {
 
 .title {
     color: white;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h3 {
 }
 
 .avatar {
-    margin-top: 75px;
+    margin-top: 25px;
     border-radius: 50%;
     width: 200px;
 }
@@ -43,7 +43,7 @@ main {
     width: 100%;
     max-width: 1100px;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .content-grid {
@@ -67,15 +67,34 @@ main {
     padding: 25px;
 }
 
-.grid-item-contact {
+ul {
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.contact-grid {
+    width: 50%;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     padding: 25px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .contact-icon {
     text-align: center;
     color: white;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 750px) {
@@ -99,11 +118,8 @@ main {
         grid-row: 4;
     }
 
-    .grid-item-contact {
+    .contact-grid {
         grid-template-columns: auto;
     }
-    
-    .contact-icon {
-        margin-bottom: 30px;
-    }
+
   }
