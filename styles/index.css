@@ -1,156 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 html {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    width: 100%;
-    background-color: rgb(41, 38, 54);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+  background-attachment: fixed;
 }
 
 body {
-    background: rgb(35, 36, 37);
-    background: linear-gradient(0deg, rgb(41, 38, 54) 0%, rgba(35,36,37,1) 60%);
-    margin: 0;
-    overflow-x: hidden;
-    width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .title {
-    color: white;
-    margin-top: 25px;
+  color: white;
+  margin-top: 25px;
 }
 
 h1 {
-    text-align: center;
-    margin: 0;
+  text-align: center;
+  margin: 0;
 }
 
 h3 {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 0;
-    font-weight: 300;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
 }
 
 .location {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
 }
 
 .location-icon {
-    margin-top: 50%;
-    margin-right: 10px;
+  margin-top: 50%;
+  margin-right: 10px;
 }
 
 .main-container {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .avatar {
-    margin-top: 25px;
-    border-radius: 50%;
-    width: 200px;
+  margin-top: 25px;
+  border-radius: 50%;
+  width: 200px;
 }
 
 main {
-    width: 100%;
-    max-width: 1100px;
-    padding: 20px;
-    margin-top: 25px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  margin-top: 25px;
 }
 
 .content-grid {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 .grid-heading {
-    text-align: center;
-    color: white;
-    word-wrap: break-word;
-    padding: 15px;
-    font-weight: 500;
-    font-size: 25px;
+  text-align: center;
+  color: white;
+  word-wrap: break-word;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .grid-item {
-    text-align: left;
-    color: white;
-    word-wrap: break-word;
-    padding: 25px;
+  text-align: left;
+  color: white;
+  word-wrap: break-word;
+  padding: 25px;
 }
 
 .grid-item-4 {
-    text-align: justify;
+  text-align: justify;
 }
 
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-grid {
-    width: 50%;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    padding: 25px;
-    margin: 0 auto;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  padding: 25px;
+  margin: 0 auto;
 }
 
 .contact-title {
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .contact-icon {
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
 }
 
-.contact-icon > a, .contact-icon > a:visited {
-    color: rgb(84, 157, 284);
+.contact-icon > a,
+.contact-icon > a:visited {
+  color: rgb(84, 157, 284);
 }
 
 .contact-icon > a:hover {
-    color: lightgrey;
+  color: lightgrey;
 }
 
+.space {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.stars {
+  animation-name: stars;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-image: radial-gradient(
+      2px 2px at 20px 30px,
+      #eee,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 750px) {
-    .content-grid {
-        grid-template-columns: auto;
-    }
-
-    .grid-item-1 {
-        grid-row: 1;
-    }
-
-    .grid-item-4 {
-        grid-row: 2;
-    }
-
-    .grid-item-2 {
-        grid-row: 3;
-    }
-
-    .grid-item-5 {
-        grid-row: 4;
-    }
-
-    .contact-grid {
-        grid-template-columns: auto;
-    }
-
+  .content-grid {
+    grid-template-columns: auto;
   }
+
+  .grid-item-1 {
+    grid-row: 1;
+  }
+
+  .grid-item-4 {
+    grid-row: 2;
+  }
+
+  .grid-item-2 {
+    grid-row: 3;
+  }
+
+  .grid-item-5 {
+    grid-row: 4;
+  }
+
+  .contact-grid {
+    grid-template-columns: auto;
+  }
+}
