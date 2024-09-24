@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
+
 html {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #f5f3ff 0, #dbeafe 100%);
+  background: #F8FAFC;
   background-attachment: fixed;
 }
 
@@ -28,6 +29,7 @@ body {
   justify-content: space-between;
   margin-top: 128px;
   margin-bottom: 64px;
+  gap: 32px;
 }
 
 .hero-left {
@@ -38,39 +40,16 @@ body {
 }
 
 .hero-subtitle {
-  max-width: 60ch;
+  max-width: 70ch;
   text-wrap: balance;
-}
-
-.hero-right {
-
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .hero-img {
   border-radius: 50%;
-  width: 350px;
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-me-heading {
-  text-align: center;
-}
-
-.about-me-paragraph {
-  text-align: center;
-  max-width: 60ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.exp-and-edu {
-  display: flex;
-  flex-direction: row;
-  gap: 64px;
+  width: 300px;
 }
 
 h1 {
@@ -105,14 +84,16 @@ li {
   font-size: 20px;
 }
 
-.location {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
 li {
   margin-bottom: 10px;
+}
+
+.blog-list {
+  padding-left: 0;
+}
+
+.blog-list > li {
+  list-style: none;
 }
 
 .contact-icons {
@@ -122,8 +103,8 @@ li {
 }
 
 .contact-icon > a:hover > img {
-  filter: brightness(2.5);
-  transform: scale(1.1);
+  filter: brightness(2);
+  transform: scale(1.025);
   transition-property: transform, filter;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
