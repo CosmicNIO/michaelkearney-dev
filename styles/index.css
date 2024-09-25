@@ -20,7 +20,7 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  color: #172554;
+  color: #1E1B4B;
 }
 
 .hero {
@@ -103,7 +103,7 @@ li {
 }
 
 .contact-icon > a:hover > img {
-  filter: brightness(2);
+  filter: brightness(1.5);
   transform: scale(1.025);
   transition-property: transform, filter;
   transition-duration: 0.2s;
@@ -124,6 +124,14 @@ li {
 
   h3 {
     text-align: center;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+  }
+
+  .contact-icons {
+    justify-content: center;
   }
 }
 
